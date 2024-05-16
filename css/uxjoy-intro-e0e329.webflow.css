@@ -1,0 +1,179 @@
+body {
+  color: #333;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+a:hover {
+  color: #737373;
+}
+
+a:visited {
+  color: #333;
+}
+
+.window-transparancy-section {
+  height: 25vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.window-mask {
+  z-index: 1;
+  background-image: url('../images/knockout.png');
+  background-position: -7% 0;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-attachment: scroll;
+  width: 180vw;
+  height: 100%;
+  margin-left: -20vw;
+  position: relative;
+}
+
+.padding {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 78.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15vh 5vw;
+}
+
+.padding.padding-small {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.video_background {
+  z-index: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.heading {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.steps-list {
+  text-align: left;
+  margin-top: 2rem;
+  padding-left: 0;
+}
+
+.class-text_callout {
+  color: #fff;
+  background-color: #2a6dbb;
+  border-radius: 3px;
+  padding: 2px 4px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.step-list_item {
+  margin-bottom: .5rem;
+  line-height: 1.6;
+}
+
+.content-grid {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1.25fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-items: center;
+  max-width: 71rem;
+  display: grid;
+}
+
+.text-center {
+  text-align: center;
+  max-width: 40rem;
+}
+
+.text-mask_wrapper {
+  z-index: 1;
+  color: #000;
+  text-align: center;
+  mix-blend-mode: color-burn;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+  position: relative;
+}
+
+.text-mask_text {
+  color: #fff;
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.knockout-text-section {
+  position: relative;
+}
+
+.button {
+  border-radius: 9px;
+  padding: .8rem 1rem;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button:visited {
+  color: #fff;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.body {
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  font-family: Montserrat, sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  .text-mask_text {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .text-center {
+    max-width: none;
+  }
+
+  .text-mask_text {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .text-mask_wrapper {
+    mix-blend-mode: screen;
+  }
+}
+
+
